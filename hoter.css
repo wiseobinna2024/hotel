@@ -1,7 +1,8 @@
 body{
     background-image: url('image/polmain.jpg');
     background-repeat: no-repeat; 
-    background-postion: center; 
+    background-position: center; 
+    background-position-y: -150px; 
     background-size: cover; 
     background-attachment: fixed; 
     width: 1200px; 
@@ -9,6 +10,11 @@ body{
     margin-left:auto; 
     margin-right: auto;
     background-blend-mode: darken; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh;
+    overflow-y: hidden;
+   
 
 
 } 
@@ -73,6 +79,8 @@ body{
 .main{
     text-align: center; 
    margin-top: 120px;
+   animation: fade-in 0.40s; 
+   transition: amimation 0.2s; 
 }
 .text-header{
    
@@ -132,4 +140,25 @@ body{
     color: black; 
     opacity: 0.9;
 
+}
+.footer{
+    display: flex; 
+    width: 1150px;
+    text-align: center; 
+    justify-content: space-between;
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top: auto; 
+    border-top: 2px solid rgba(255,255,255,0.4);
+    padding-top: 13px; 
+    color: rgba(255,255,255,0.5)
+}
+.copyright{
+    color: rgba(121, 111, 111, 0.5); 
+    font-size: 15px ; 
+  
+}
+.hotel-room{
+    color: rgba(121, 111, 111, 0.5); 
+ 
 }
